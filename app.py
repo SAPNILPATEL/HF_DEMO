@@ -23,7 +23,7 @@ def predict(pclass:int = 3,
 with gr.Blocks() as demo:
     #keeping the three categorical feature input in the same row
     with gr.Row() as row1:
-        pclass = gr.Dropdown(choices=[1,2,3], label = 'pclass')
+        pclass = gr.Dropdown(choices=[1,2,3], label = 'passengerclass')
         sex = gr.Dropdown(choices=['male','female'], label = 'sex')
         embarked = gr.Dropdown(choices = ['C','Q','S'], label = 'embarked')
 
